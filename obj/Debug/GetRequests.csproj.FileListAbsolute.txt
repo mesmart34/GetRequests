@@ -1,0 +1,11 @@
+C:\Users\mesmart\Documents\GetRequests\GetRequests\bin\Debug\GetRequests.exe.config
+C:\Users\mesmart\Documents\GetRequests\GetRequests\bin\Debug\GetRequests.exe
+C:\Users\mesmart\Documents\GetRequests\GetRequests\bin\Debug\GetRequests.pdb
+C:\Users\mesmart\Documents\GetRequests\GetRequests\obj\Debug\GetRequests.csproj.AssemblyReference.cache
+C:\Users\mesmart\Documents\GetRequests\GetRequests\obj\Debug\GetRequests.csproj.SuggestedBindingRedirects.cache
+C:\Users\mesmart\Documents\GetRequests\GetRequests\obj\Debug\GetRequests.csproj.CoreCompileInputs.cache
+C:\Users\mesmart\Documents\GetRequests\GetRequests\obj\Debug\GetRequests.exe
+C:\Users\mesmart\Documents\GetRequests\GetRequests\obj\Debug\GetRequests.pdb
+C:\Users\mesmart\Documents\GetRequests\GetRequests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mesmart\Documents\GetRequests\GetRequests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mesmart\Documents\GetRequests\GetRequests\obj\Debug\GetRequests.csproj.CopyComplete
