@@ -5,6 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
+using System.Linq;
+using System.Text;
+using System.Web.Script.Serialization;
 
 namespace GetRequests
 {
@@ -26,6 +29,26 @@ namespace GetRequests
     {
         private const string m_url = "https://xn--e1aajagmjdbheh6azd.xn--p1ai";
         private readonly string m_sessionId;
+
+        public static string GetSID(string _login, string _password)
+        {
+            var request = (HttpWebRequest)WebRequest.Create(m_url + "/api/v1/Security/Login");
+            request.Method = "POST";
+            request.ContentType = "application/json";
+            var stream = request.GetRequestStream();
+            var body = new JavaScriptSerializer().Serialize(new
+            {
+                login = _login,
+                password = _password,
+                eventId = 14
+            });
+            var data = Encoding.UTF8.GetBytes(body.ToString());
+            stream.Write(data, 0, data.Length);
+            var response = request.GetResponse();
+            var cookie = response.Headers["Set-Cookie"].ToString();
+            var sid = cookie.Split(' ')[0];
+            return new string(sid.Take(sid.Length - 1).Skip(4).ToArray());
+        }
 
         public RequestsManager(string sessionId)
         {
